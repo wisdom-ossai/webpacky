@@ -1,8 +1,13 @@
 import _ from "lodash";
+import "./clearButton";
+import style from "./style.css";
+
+const btn = document.getElementById("click-me");
 
 function onButtonClicked() {
   const el = document.getElementById("header");
   el.innerHTML = "The ui should be updated to this when button is clicked!";
+  el.classList.add([style.header]);
 
   const shopItems = ["Apple", "Banana", "Orange"];
   const ul = document.getElementById("shop-list");
@@ -12,5 +17,7 @@ function onButtonClicked() {
 
     ul.appendChild(li);
   });
+  ul.classList.add([style.shopList]);
 }
-document.getElementById("click-me").addEventListener("click", onButtonClicked);
+btn.addEventListener("click", onButtonClicked);
+btn.classList.add([style.btn]);

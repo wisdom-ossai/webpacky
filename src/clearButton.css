@@ -1,0 +1,10 @@
+.btn {
+  height: 48px;
+  padding-inline: 20px;
+  background: yellow;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
