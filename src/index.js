@@ -1,6 +1,6 @@
 import _ from "lodash";
 import "./clearButton";
-import style from "./style.css";
+import style from "./style.scss";
 
 const btn = document.getElementById("click-me");
 

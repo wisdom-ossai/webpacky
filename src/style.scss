@@ -1,9 +1,11 @@
+$primary: blueviolet;
+
 #header {
-  color: blueviolet;
+  color: $primary;
 }
 
 .shopList {
-  background: blueviolet;
+  background: $primary;
 }
 
 .btn {
