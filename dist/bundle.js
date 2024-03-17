@@ -169,7 +169,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cle
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _clearButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clearButton */ \"./src/clearButton.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\n\n\n\nconst btn = document.getElementById(\"click-me\");\n\nfunction onButtonClicked() {\n  const el = document.getElementById(\"header\");\n  el.innerHTML = \"The ui should be updated to this when button is clicked!\";\n  el.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"].header]);\n\n  const shopItems = [\"Apple\", \"Banana\", \"Orange\"];\n  const ul = document.getElementById(\"shop-list\");\n  lodash__WEBPACK_IMPORTED_MODULE_0___default().forEach(shopItems, function (item) {\n    const li = document.createElement(\"li\");\n    li.innerHTML = item;\n\n    ul.appendChild(li);\n  });\n  ul.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"].shopList]);\n}\nbtn.addEventListener(\"click\", onButtonClicked);\nbtn.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"].btn]);\n\n\n//# sourceURL=webpack://get-started/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/webpack_logo.png */ \"./src/assets/webpack_logo.png\");\n/* harmony import */ var _clearButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./clearButton */ \"./src/clearButton.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\n\n\n\n\nconst btn = document.getElementById(\"click-me\");\nconst logo = document.getElementById(\"logo\");\n\nlogo.src = _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1__;\n\nfunction onButtonClicked() {\n  const el = document.getElementById(\"header\");\n  el.innerHTML = \"The ui should be updated to this when button is clicked!\";\n  el.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_3__[\"default\"].header]);\n\n  const shopItems = [\"Apple\", \"Banana\", \"Orange\"];\n  const ul = document.getElementById(\"shop-list\");\n  lodash__WEBPACK_IMPORTED_MODULE_0___default().forEach(shopItems, function (item) {\n    const li = document.createElement(\"li\");\n    li.innerHTML = item;\n\n    ul.appendChild(li);\n  });\n  ul.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_3__[\"default\"].shopList]);\n}\nbtn.addEventListener(\"click\", onButtonClicked);\nbtn.classList.add([_style_scss__WEBPACK_IMPORTED_MODULE_3__[\"default\"].btn]);\n\n\n//# sourceURL=webpack://get-started/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/webpack_logo.png":
+/*!*************************************!*\
+  !*** ./src/assets/webpack_logo.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/53af55b51392b4dba086.png\";\n\n//# sourceURL=webpack://get-started/./src/assets/webpack_logo.png?");
 
 /***/ })
 
@@ -262,6 +273,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

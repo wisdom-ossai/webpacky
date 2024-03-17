@@ -1,8 +1,12 @@
 import _ from "lodash";
+import Logo from "./assets/webpack_logo.png";
 import "./clearButton";
 import style from "./style.scss";
 
 const btn = document.getElementById("click-me");
+const logo = document.getElementById("logo");
+
+logo.src = Logo;
 
 function onButtonClicked() {
   const el = document.getElementById("header");
